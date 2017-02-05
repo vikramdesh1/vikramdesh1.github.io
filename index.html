@@ -1,103 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<title>Vikram Deshmukh's Website</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/typed-css.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-		<script src="js/typed.js"></script>
-		<script>
-			$(document).ready(function() {
+<head>
+	<title>Vikram Deshmukh's Website</title>
+	<meta charset="utf-8">
+</head>
 
-				$("nav").fadeIn(1000);
-				$(".body-container").fadeIn(1000);
-				
-				$("nav li a").click(function(e) {
-					e.preventDefault();
-					var p = $(this).parent();
-					$("nav li").removeClass("active");
-					p.addClass("active");
-					var url = $(this).attr("href");
-					$(".body-container").slideUp(function() {
-						$(".body-container").load(url, function() {
-    					    $(".body-container").slideDown();
-						})
-					});
-				});
-				
-				$("#about").click(function(e) {
-					e.preventDefault();
-					$("nav li").removeClass("active");
-					$(".body-container").slideUp(function() {
-						$(".body-container").load("about.html", function() {
-    					    $(".body-container").slideDown();
-						})
-					});
-				});
-			});
-		</script>
-	</head>
+<body>
+	<p>Hello World!</p>
+</body>
 
-	<body>
-		<nav class="navbar navbar-inverse" style="display:none">
-			<div class="container">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<li><a href="education.html"><span class="glyphicon glyphicon-education"></span> Education</a></li>
-					<li><a href="experience.html"><span class="glyphicon glyphicon-briefcase"></span> Experience</a></li>
-					<li><a href="projects.html"><span class="glyphicon glyphicon-cd"></span> Projects</a></li>
-					<li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		<div class="container body-container" style="display:none">
-			<script>
-	 $(function(){
-      $(".title").typed({
-        strings: ["<h2>Greetings! ^500<small>Thanks for visiting</small>"],
-        typeSpeed: 0,
-		startDelay: 0,
-		showCursor: false
-      });
-	});
-</script>
-
-<div class="page-header">
-	<span class="title"></span>
-</div>
-
-<div class="row">
-	<div class="col-xs-3">
-		<img src="images/mypic.jpg" alt="That's me!" class="img-thumbnail">
-	</div>
-	<div class="col-xs-9">
-		<p>Hi, my name is Vikram and I am currently a Jr. Java Developer in Washington D.C. I recently graduated 
-		with a Master's degree in Computer Engineering from The University of Texas at Dallas and I also have a 
-		Bachelor's degree in Electrical and Electronics Engineering from M.S. Ramaiah Institute of Technology, Bangalore. 
-		I have dabbled in various disciplines ranging from robotics to 3D animation but found that my true interest lied in
-		computers and software development. I am currently most comfortable with web application development using 
-		Java, Spring, Hibernate, HTML5, CSS3 and JavaScript but I also have experience developing for Android 
-		and with other languages such as C, C++ and Ruby. Feel free to check out the other sections on this website 
-		and once again, thanks for visiting!
-		</p>
-	</div>
-</div>
-
-		</div>
-	</body>
-	<br/>
-	<div class="container separator" style="min-height:1px; background-color:#eee;">
-	</div>
-	<br/>
-	<div class="container">
-		<footer>
-	<h6 class="text-muted">Last updated on 05/27/2015<span class="pull-right">v2.1 | <a href="#" id="about">About</a></span></h6>
+<footer>
+	<p>WIP</p>
 </footer>
 
-	</div>
 </html>
