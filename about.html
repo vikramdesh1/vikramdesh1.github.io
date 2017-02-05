@@ -1,0 +1,26 @@
+<script>
+	 $(function(){
+      $(".title").typed({
+        strings: ["<h2>About</h2>"],
+        typeSpeed: 0,
+		startDelay: 0,
+		showCursor: false,
+        callback: function() {
+    		$(".about").typed({
+			strings: ["Uses <a href=\"http://getbootstrap.com/\" target=\"_blank\">Bootstrap</a>, <a href=\"https://jquery.com/\" target=\"_blank\">jQuery</a> and <a href=\"http://www.mattboldt.com/demos/typed-js/\" target=\"_blank\">Typed.js</a>"],
+			typeSpeed: 0,
+			startDelay: 0,
+			showCursor: false
+			});
+		}
+      });
+	});
+</script>
+
+<div class="page-header">
+	<span class="title"></span>
+</div>
+
+<div>
+	<span class="about"></span>
+</div>

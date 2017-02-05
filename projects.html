@@ -1,0 +1,88 @@
+<script>
+	$(function(){
+      $(".title-one").typed({
+        strings: ["<h2>Technical Projects</h2>"],
+        typeSpeed: 0,
+		startDelay: 0,
+		showCursor: false,
+		callback: function() {
+			$(".title-two").typed({
+			strings: ["<h2>Other Projects</h2>"],
+			typeSpeed: 0,
+			startDelay: 0,
+			showCursor: false
+			});
+		}
+      });
+	});
+
+	$("#hsrsh_button").click(function() {
+		$("#hsrsh_button").slideUp();
+		$("#hsrsh_video").load("media_pages/hsrsh_video.html", function() {
+			$("#hsrsh_video").slideDown();
+		});
+	});
+	
+	$("#bitc_button").click(function() {
+		$("#bitc_button").slideUp();
+		$("#bitc_player").load("media_pages/bitc_player.html", function() {
+			$("#bitc_player").slideDown();
+		});
+	});
+</script>
+
+<div class="page-header">
+	<span class="title-one"></span>
+</div>
+
+<div>
+	
+		
+			<strong>Hand Sanitization Reminder System for Hospitals</strong>
+			<ul>
+				<li>Developed a system which detects when a person enters a room in a hospital and reminds them to sanitize their hands. This ensures that even if the person forgets to sanitize their hands, the system will remind them resulting in reduced transmission of pathogens</li>
+				<li>Technologies used : Texas Instruments MSP-EXP430G2 Launchpad, ElecFreaks HC-SR04 ultrasonic ranging module, Code Compiler Studio, C</li>
+			</ul>
+			<div id="hsrsh_video" class="col-xs-12 text-center">
+				<button id="hsrsh_button" class="btn btn-default">Click to see a demo</button>
+			</div>
+			<br/>
+			<br/>
+			<strong>Stock Market Trend Prediction based on a Decision-Tree Support Vector Machine</strong>
+			<ul>
+				<li>Developed a stock trend prediction algorithm based on a hybrid decision tree-support vector machine approach that analyzes past values for a given stock and outputs a prediction for the next day. It utilizes 28 technical indices to perform the prediction</li>
+				<li>Technologies used : Java, Eclipse, Weka</li>
+			</ul>
+		
+		
+			<strong>Voice Controlled Reverse Area Code Lookup</strong>
+			<ul>
+				<li>Developed an application that uses voice commands to search for area codes in US phone numbers and output the state to which they belong or vice versa</li>
+				<li>Technologies used : Java, Eclipse, Sphinx</li>
+			</ul>
+		
+		
+			<strong>RSSFeeder</strong>
+			<ul>
+				<li>Developed an Android application that fetches RSS feeds and displays them as a list of links that can be clicked to see the full article. The application allows for customization of the RSS feed URLs</li>
+				<li>Technologies used : Java, Eclipse, Android SDK</li>
+			</ul>
+			
+		
+	
+</div>
+<br/>
+<div class="page-header">
+	<span class="title-two"></span>
+</div>
+
+<div>
+		<strong>Bug In The Code</strong>
+		<ul>
+			<li>Learning to mix electronic music, mainly Drum &amp; Bass as a hobby under the alias 'Bug In The Code'</li>
+		</ul>
+		<br/>
+		<div id="bitc_player" class="col-xs-12 text-center">
+			<button id="bitc_button" class="btn btn-default">Click to load the Mixcloud player</button>
+		</div>
+</div>
