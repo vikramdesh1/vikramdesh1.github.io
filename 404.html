@@ -5,5 +5,13 @@ permalink: /404.html
 ---
 
 <div class="container">
-  <p>Four Oh Four!</p>
+  <div id="particles-404"></div>
+  <p>Uh oh! Such 404! Much invalid address!</p>
 </div>
+<script>
+    $(document).ready(function() {
+        particlesJS.load('particles-404', 'assets/particles-404.json', function() {
+            console.log("particles-js successfully loaded");
+        });
+    });
+</script>
