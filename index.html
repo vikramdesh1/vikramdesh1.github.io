@@ -3,5 +3,13 @@ layout: default
 title: Home
 ---
 <div class="container">
+    <div id="particles"></div>
     <p>Hi! I'm Vikram. Currently a Java Developer in Washington, DC, I graduated with a Master of Science degree in Computer Engineering from the Univerity of Texas at Dallas. You can usually find me organizing or attending a meetup, listening to electronic music or playing Overwatch. I also spend a small amount of time creating drum &amp; bass mixes as a hobby (more about that on the projects page). Feel free to browse around the site and thanks for visiting!</p>
 </div>
+<script>
+    $(document).ready(function() {
+        particlesJS.load('particles', 'assets/particles.json', function() {
+            console.log("particles-js successfully loaded");
+        });
+    });
+</script>
